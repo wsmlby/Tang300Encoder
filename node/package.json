@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "jest": "^26.2.2"
+  },
+  "name": "tang300encoder",
+  "version": "1.0.0",
+  "description": "Encode any binary data into innocent Tang Poems.",
+  "main": "index.js",
+  "repository": "https://github.com/wsmlby/Tang300Encoder",
+  "author": "wsmlby",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  }
+}
