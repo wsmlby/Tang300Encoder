@@ -6,7 +6,7 @@
     "rollup": "^2.23.1"
   },
   "name": "tang300encoder",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Encode any binary data into innocent Tang Poems.",
   "main": "bundle.js",
   "repository": "https://github.com/wsmlby/Tang300Encoder",
@@ -15,5 +15,8 @@
   "scripts": {
     "test": "jest",
     "build": "yarn rollup --config rollup.config.js"
-  }
+  },
+  "files": [
+    "bundle.js"
+  ]
 }
