@@ -9,16 +9,16 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
-class Tang300Encoder {
+public class Tang300Encoder {
 
     private String[][] mEncodeTable;
     private HashMap<String, Byte> mDecodeTable;
-    private static String sRegex = "\\[，？！。\n]";
+    private static String sRegex = "[，？！。\n]";
 
     public Tang300Encoder() throws IOException, UnsupportedEncodingException{
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
         InputStream is = classloader.getResourceAsStream("data.txt");
-        BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-16"));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
         String[] poems = reader.readLine().split("##");
         mEncodeTable = new String[poems.length][];
         for(int i = 0; i < poems.length; i ++) {
@@ -35,7 +35,7 @@ class Tang300Encoder {
     public String encode(byte[] data) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < data.length; i++) {
-            String[] opt = mEncodeTable[data[i]];
+            String[] opt = mEncodeTable[data[i] & 0xFF];
             int idx = i % opt.length;
             sb.append(opt[idx]);
         }
