@@ -24,3 +24,5 @@ jobs:
       run: cd java && chmod +x gradlew
     - name: Build with Gradle
       run: cd java && ./gradlew build
+    - name: Test with Gradle
+      run: cd java && ./gradlew test
