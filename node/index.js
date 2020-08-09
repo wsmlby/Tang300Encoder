@@ -1,6 +1,6 @@
 // return string
-
-function Tang300Encoder(table, decoder /* boolean */) {
+const table = require("../data/encoding.json");
+function Tang300Encoder(decoder /* boolean */) {
     this.table = table;
     if (decoder) {
         this.buildDecoder();

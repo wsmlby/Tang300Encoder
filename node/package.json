@@ -1,15 +1,19 @@
 {
   "devDependencies": {
-    "jest": "^26.2.2"
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "jest": "^26.2.2",
+    "rollup": "^2.23.1"
   },
   "name": "tang300encoder",
   "version": "1.0.0",
   "description": "Encode any binary data into innocent Tang Poems.",
-  "main": "index.js",
+  "main": "bundle.js",
   "repository": "https://github.com/wsmlby/Tang300Encoder",
   "author": "wsmlby",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "yarn rollup --config rollup.config.js"
   }
 }
