@@ -15,3 +15,4 @@ poems.forEach((poem, idx) => {
 })
 
 fs.writeFileSync("../data/encoding.json", JSON.stringify(encodingTable));
+fs.writeFileSync("../java/src/main/resources/data.txt", encodingTable.map(poem => poem.join("#")).join("##"));
