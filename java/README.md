@@ -3,6 +3,8 @@
 Encode any binary data into innocent Tang Poems.
 
 ## Installation
+Download the jar from [Here](https://github.com/wsmlby/Tang300Encoder/packages/349754)
+
 Load the jar.
 
 ## Usage
