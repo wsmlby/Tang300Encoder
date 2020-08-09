@@ -9,7 +9,7 @@
 plugins {
     id("maven-publish")
 }
-group = 'com.wsmlby'
+
 publishing {
     repositories {
         maven {
@@ -23,6 +23,9 @@ publishing {
     }
     publications {
         gpr(MavenPublication) {
+            group = 'com.wsmlby'
+            artifactId 'Tang300Encoder'
+            version '0.0.3'
             from(components.java)
         }
     }
