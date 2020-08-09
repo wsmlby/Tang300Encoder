@@ -6,7 +6,7 @@
     "rollup": "^2.23.1"
   },
   "name": "tang300encoder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Encode any binary data into innocent Tang Poems.",
   "main": "bundle.js",
   "repository": "https://github.com/wsmlby/Tang300Encoder",
