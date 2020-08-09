@@ -34,7 +34,7 @@ To load this module directly into browsers you can use the [UMD (Universal Modul
 **Using [jsDelivr](https://cdn.jsdelivr.net/npm/tang300encoder@latest/)**:
 
 ```html
-<script src="https://unpkg.com/tang300encoder@latest/bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tang300encoder@latest/bundle.js"></script>
 ```
 
 Then you can use them directly in browsers by
